@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "league-of-legends-players-kpi",
+  "private_key_id": "4c94be3fe88755bc82d2092a6d7df10bbe2162c4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDO2cuUzc+fIwB\nw6XISELjnHSkgTLTiFCxBBI9RwWSw0wtmzft4YcRFMHJFVDG/50pCqHWEqkTxK/i\nuSSoU78k783iNyW+BSpF3t3FF6fnaOxf+7vZyty2sKB8X4bzNcPl+dlKKAGbEB/R\n+EZfMiRKuYInCWK7F7K/UTe+u8iul7c6oQf2Fp+w/1tznpKSabl/O+iHZvIa2/2g\nJumX7GXasvVXEnwzabAOQycpg9VYI05e+Do+Z8jmr5DYALPHhsTSHEdtppSTue+E\nM53aebOivnWCfW3MwkhU8kA7+WjSpyC3bfpnbYaSoB8UEZU+NTwNNkHJhk0j34Ob\nsYyyFKc5AgMBAAECggEADy3NSwRgi1DM5F65IxoeLDrn9TnP0TM8HdUsk1vUHrnl\nMHcM2UeDdDQmUGtiN0ScrBoV5NJY167/Q0wEgftX5UfpPJUvz6cwZxQJr0cUcHkf\nhqNocqmTcTdIlP7q27oyh8z+BEZZwJv3c2BfnUtlV7N2X3Fa/iOcq8QFZuSL+Onz\nNCBjKIJJXzj6FM+vAinnwA6847oYhOrKzreIlDN8GsGh1X5SCAhfiVue41E4VGBi\nQ28Lge5IV4MJS1STvMC4VL1ztUlAuqh32K74lePKlNMmLRRrqSRxl1S2OD55owpM\n5G87WApYWqbX8QADq066ozc4ATbQ44itBH06ctm3kQKBgQDwQMuPGGnYgOxAhH1J\nSaAAOFKBT0gSqYQ74TvkWJ4EY5OkwGAKp9/JYy+8kq2D+nSwfSXaPspsxKem4WrE\nAe02NITzjC7MysTCyLEQoDPGbHJjEf0oVbk9eeWXMISuS/XMCPdWeEo4HPjqqxnv\nljIwUjVFk9q9Ut7zTVUL3zXECQKBgQDQBzMqLh7u3ZxOX5OLeQlvOQIJbRatZsOL\nlbcf9sxKLcOQEAqsQoLOpb4JhOoRZ0rq79R5vGobIwkcUX3pUwnZZvurSgqiziqp\nu3mlN/5LyUFDhTO475qOOuOV0sE4ocN3EpnyPastgFAzSzH04j2klLVFxEvdePAb\nYrDJZNB1sQKBgExXupdQ4alrZicmMo2MOKx5OTZf0/4iIaPJcXeg9S1d2veaLaqV\nJ5Zdzzhzv3FVr6i5S8Lq+vXPE5sCvCNmnVMBI1IktGZc9GMU1Lb8wRcHNN3oRHKB\nsugnCN6fCzo7ZvKb0sSGWscz5aDkF8y7BF24cbcXQYWxhKj5ZNHt7q7JAoGAa8IP\nAt55L4qkGQTxTOIZvP9uyqszgAcna/rVrT0Ofa5PCyUEIk8hqyG32v56sSEscZ5i\nFd0/qWbwpTahXmehRnhODWCBOexJtTpjvO3QUDmkEPHC5R1YlixzD3zokglZUyjT\njePb8+nvoWJmMk+vVr2hWM5h7gtjdQweP3R1d0ECgYEAxwVkCTAy9SGYtOnHAfhm\nMIumLz2Q+3Ki3VZC877sDK0TcS5I5imUng6LHgwStm+SgJwex+IfV0zWTztT8KbQ\nPoyUGfVsLd3qiYBmdrYwbCcCwaBR1iZvLiX/ZYjepRcse+MCnrnJtncrjsrxfZdF\n60+ROI4O2EriEoPAAuSAFc0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-sheet-lol@league-of-legends-players-kpi.iam.gserviceaccount.com",
+  "client_id": "116884984045598194755",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-sheet-lol%40league-of-legends-players-kpi.iam.gserviceaccount.com"
+}
