@@ -424,7 +424,7 @@ def main():
             print("### region : " + sys.argv[1])
             print("### KPI en cours de création")
             from_cassiopeia_to_dataframe(sys.argv[2],"n/a",ref_div,sys.argv[1])
-        elif sys.argv[3]=="ALL":
+        elif sys.argv[2]=="ALL":
             for tier in TIER:
                     for div in DIVISION:
                             print("\n\n### tier : " + tier)
@@ -434,7 +434,7 @@ def main():
                             from_cassiopeia_to_dataframe(tier,div,ref_div,sys.argv[1])
                             ref_div = ref_div+1   
         else:
-        	for div in DIVISION:
+            for div in DIVISION:
                 print("\n\n### tier : " + sys.argv[2])
                 print("### division : " + div)
                 print("### region : " + sys.argv[1])
