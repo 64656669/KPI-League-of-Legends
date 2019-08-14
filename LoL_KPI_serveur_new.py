@@ -205,6 +205,7 @@ def is_an_active_player(summ):
     date_day = date_time.datetime.now() + date_time.timedelta(-30)
     timestamp_date = int(date_time.datetime.timestamp(date_day))
     matches = cass.get_match_history(summoner=summ,begin_time=timestamp_date*1000)
+    size = 0
     #size = len(matches) ---> TOO MUCH LONG
     for match in matches:
         size=size+1
