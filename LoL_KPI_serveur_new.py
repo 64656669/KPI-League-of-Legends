@@ -68,12 +68,12 @@ def from_cassiopeia_to_dataframe(tier,div,ref_div,reg):
                         cpt_active_51=cpt_active_51+1
                         cpt_active=cpt_active+1
                     #ON INCREMENTE DE DF AVEC LES DONNEES DE CHAQUES JOUEURS
-                    df_players_csv = df_players_csv.append({"Tier ":str(league_entry.tier),"Division":str(league_entry.division),"Summoner":str(league_entry.summoner),"Inactive":str(league_entry.inactive),"Date":str(date.today())},ignore_index = True)
+                    #df_players_csv = df_players_csv.append({"Tier ":str(league_entry.tier),"Division":str(league_entry.division),"Summoner":str(league_entry.summoner),"Inactive":str(league_entry.inactive),"Date":str(date.today())},ignore_index = True)
                 #ON UPDATE LE DATAFRAME QUI CONTIENT LES COMPTEURS DE JOUEURS ACTIFS ET NON ACTIFS
                 df_KPI_players = df_KPI_players.append({"Tier ":str(league_entry.tier),"Division":str(league_entry.division),"Date":str(date.today()),"Region":str(reg),"Nombre_total":str(cpt_all),"Nombre_actif":str(cpt_active),"Nombre_actif_5":str(cpt_active_5),"Nombre_actif_10":str(cpt_active_10),"Nombre_actif_20":str(cpt_active_20),"Nombre_actif_30":str(cpt_active_30),"Nombre_actif_50":str(cpt_active_50),"Nombre_actif_50+":str(cpt_active_51)},ignore_index = True)
                 #ON ENREGISTRE LE CSV ET ON LE VIDE 
                 #df_players_csv.to_csv(r'C:\Users\jérôme\Desktop\PROJETS DEV\Riot API\df_players_'+str(date.today())+'.csv',mode='a', header=False,index=True)           
-                df_players_csv.drop(df_players_csv.index, inplace=True)
+                #df_players_csv.drop(df_players_csv.index, inplace=True)
             else :
                 cpt_all = len(league)
                 df_KPI_players = df_KPI_players.append({"Tier ":str(league.tier),"Division":str(league.division),"Date":str(date.today()),"Region":str(reg),"Nombre_total":str(cpt_all)},ignore_index = True)
@@ -205,7 +205,12 @@ def is_an_active_player(summ):
     date_day = date_time.datetime.now() + date_time.timedelta(-30)
     timestamp_date = int(date_time.datetime.timestamp(date_day))
     matches = cass.get_match_history(summoner=summ,begin_time=timestamp_date*1000)
-    size = len(matches)
+    #size = len(matches) ---> TOO MUCH LONG
+    for match in matches:
+        size=size+1
+        if (size > 50):
+            cat=51
+            return cat
     if size <= 5:
         cat=5
     elif (size > 5) and (size <=10):
@@ -216,8 +221,6 @@ def is_an_active_player(summ):
         cat=30
     elif (size > 30) and (size <=50):
         cat=50
-    elif (size > 50):
-        cat=51
     return cat
 
 def export_to_sheets_historique(df):
